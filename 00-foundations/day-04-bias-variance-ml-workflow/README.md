@@ -19,4 +19,4 @@
 
 ## Outcome
 
-Students can describe the complete ML lifecycle and explain the bias-variance tradeoff.
+Learners can describe the complete ML lifecycle and explain the bias-variance tradeoff.

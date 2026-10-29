@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students understand why high training accuracy does not necessarily mean a good model.
+Learners understand why high training accuracy does not necessarily mean a good model.

@@ -21,4 +21,4 @@
 
 ## Outcome
 
-Students can expose an ML model through a simple API and understand the basics of production use.
+Learners can expose an ML model through a simple API and understand the basics of production use.

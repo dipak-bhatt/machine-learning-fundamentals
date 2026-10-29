@@ -19,4 +19,4 @@
 
 ## Outcome
 
-Students can build a reproducible ML pipeline rather than a collection of disconnected notebook cells.
+Learners can build a reproducible ML pipeline rather than a collection of disconnected notebook cells.

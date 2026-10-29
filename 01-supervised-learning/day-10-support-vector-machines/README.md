@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students understand maximum-margin classification and when kernels are useful.
+Learners understand maximum-margin classification and when kernels are useful.

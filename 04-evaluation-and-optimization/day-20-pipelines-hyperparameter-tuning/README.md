@@ -21,4 +21,4 @@
 
 ## Outcome
 
-Students can construct a reproducible training workflow and tune models without contaminating evaluation data.
+Learners can construct a reproducible training workflow and tune models without contaminating evaluation data.

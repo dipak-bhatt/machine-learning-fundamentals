@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students can choose between K-means, hierarchical clustering, and DBSCAN based on the data's structure.
+Learners can choose between K-means, hierarchical clustering, and DBSCAN based on the data's structure.

@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students understand the bridge between classical ML and neural networks.
+Learners understand the bridge between classical ML and neural networks.

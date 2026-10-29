@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students can represent dependencies between variables and explain probabilistic reasoning.
+Learners can represent dependencies between variables and explain probabilistic reasoning.

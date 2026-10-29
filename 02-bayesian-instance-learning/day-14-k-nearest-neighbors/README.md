@@ -19,4 +19,4 @@
 
 ## Outcome
 
-Students can explain how a prediction is based on nearby training examples and why scaling matters.
+Learners can explain how a prediction is based on nearby training examples and why scaling matters.

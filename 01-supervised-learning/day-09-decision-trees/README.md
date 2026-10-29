@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students can explain and interpret a tree-based model.
+Learners can explain and interpret a tree-based model.

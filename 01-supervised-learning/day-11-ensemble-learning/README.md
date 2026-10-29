@@ -19,4 +19,4 @@
 
 ## Outcome
 
-Students can compare individual models with ensemble methods and choose a reasonable baseline.
+Learners can compare individual models with ensemble methods and choose a reasonable baseline.

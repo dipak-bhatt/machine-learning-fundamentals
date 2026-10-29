@@ -18,4 +18,4 @@
 
 ## Outcome
 
-Students can train a regression model and interpret its predictions.
+Learners can train a regression model and interpret its predictions.

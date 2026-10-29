@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students can calculate conditional probabilities and build a basic Bayesian classifier.
+Learners can calculate conditional probabilities and build a basic Bayesian classifier.

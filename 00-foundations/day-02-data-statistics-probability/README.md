@@ -21,4 +21,4 @@
 
 ## Outcome
 
-Students can understand and summarize a dataset before training a model.
+Learners can understand and summarize a dataset before training a model.

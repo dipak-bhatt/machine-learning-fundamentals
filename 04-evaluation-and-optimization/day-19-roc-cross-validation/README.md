@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students can evaluate model stability and communicate uncertainty in performance.
+Learners can evaluate model stability and communicate uncertainty in performance.

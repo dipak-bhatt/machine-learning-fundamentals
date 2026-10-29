@@ -19,4 +19,4 @@
 
 ## Outcome
 
-Students can build a classification model and explain how predicted probabilities become class labels.
+Learners can build a classification model and explain how predicted probabilities become class labels.

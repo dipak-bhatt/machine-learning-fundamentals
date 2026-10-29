@@ -12,7 +12,7 @@
 
 ## Practical
 
-- Student presentations and live demonstrations.
+- Learner presentations and live demonstrations.
 - Review source code, preprocessing, model selection, and evaluation.
 - Run predictions on previously unseen examples.
 - Peer review and instructor feedback.
@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Each student or group can explain, demonstrate, and defend a complete ML project.
+Each learner or group can explain, demonstrate, and defend a complete ML project.

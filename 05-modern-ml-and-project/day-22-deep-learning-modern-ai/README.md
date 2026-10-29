@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students understand where deep learning and generative AI fit into the broader ML landscape.
+Learners understand where deep learning and generative AI fit into the broader ML landscape.

@@ -21,4 +21,4 @@
 
 ## Outcome
 
-Students can reduce the number of features and explain the tradeoff between dimensionality and retained information.
+Learners can reduce the number of features and explain the tradeoff between dimensionality and retained information.

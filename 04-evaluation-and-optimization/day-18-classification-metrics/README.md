@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students can choose appropriate metrics instead of relying on accuracy alone.
+Learners can choose appropriate metrics instead of relying on accuracy alone.

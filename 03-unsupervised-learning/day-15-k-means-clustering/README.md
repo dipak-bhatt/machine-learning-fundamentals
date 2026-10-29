@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students can run K-means, interpret its clusters, and understand why selecting k is not always straightforward.
+Learners can run K-means, interpret its clusters, and understand why selecting k is not always straightforward.

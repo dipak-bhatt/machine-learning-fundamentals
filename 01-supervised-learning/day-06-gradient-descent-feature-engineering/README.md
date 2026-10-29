@@ -20,4 +20,4 @@
 
 ## Outcome
 
-Students understand how a model's parameters are learned and how feature choices affect predictions.
+Learners understand how a model's parameters are learned and how feature choices affect predictions.
