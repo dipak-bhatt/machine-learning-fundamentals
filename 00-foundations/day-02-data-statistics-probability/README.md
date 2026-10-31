@@ -1,23 +1,24 @@
-# Day 02 — Data, Statistics, and Probability Fundamentals
+# Day 02 — Data, Statistics, and Probability
 
 **Module:** Module 1: Foundations
 
-## Theory
+Before a model can learn, we need to understand the data it learns from. Today
+we look at how datasets are organized, how to summarize them with simple
+statistics, and how probability helps us reason about uncertainty — all with
+everyday examples.
 
-- Features, labels, samples, datasets, and target variables.
-- Numerical and categorical data.
-- Mean, median, mode, variance, standard deviation, and distributions.
-- Population vs. sample
--  correlation vs. causation.
-- Basic probability and conditional probability.
-- Missing values, outliers, and noisy data.
+See the detailed content in:
 
-## Practical
+- [Theory](theory.md) — features and labels, data types, mean/median/mode,
+  spread, distributions, population vs sample, correlation vs causation,
+  probability, messy data, and ML use cases for each concept.
+- [Practical](practical.md) — load `students.csv`, inspect missing values,
+  calculate statistics, draw charts, find outliers, and compute a conditional
+  probability.
 
-- Load a real CSV dataset.
-- Calculate descriptive statistics with pandas.
-- Plot histograms, scatterplots, and box plots.
-- Identify missing values, outliers, and relationships between variables.
+## Files
+
+- `students.csv` — the small dataset used in the practical.
 
 ## Outcome
 

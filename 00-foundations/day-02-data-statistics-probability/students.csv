@@ -1,0 +1,17 @@
+student_id,hours_studied,attendance_percent,previous_score,final_score,city,passed
+1,2,60,45,48,Kathmandu,No
+2,3,65,50,52,Kathmandu,No
+3,5,,60,65,Pokhara,Yes
+4,6,80,65,70,Pokhara,Yes
+5,4,70,55,58,Kathmandu,No
+6,8,90,,85,Lalitpur,Yes
+7,7,85,70,78,Lalitpur,Yes
+8,3,55,40,44,Biratnagar,No
+9,9,95,80,90,Pokhara,Yes
+10,5,78,62,,Biratnagar,Yes
+11,6,82,68,72,Kathmandu,Yes
+12,2,58,42,45,Lalitpur,No
+13,10,98,88,95,Pokhara,Yes
+14,4,72,57,60,Biratnagar,No
+15,7,88,72,80,Lalitpur,Yes
+16,40,50,30,35,Kathmandu,No

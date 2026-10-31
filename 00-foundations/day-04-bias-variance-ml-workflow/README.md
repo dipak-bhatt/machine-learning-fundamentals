@@ -2,21 +2,27 @@
 
 **Module:** Module 1: Foundations
 
-## Theory
+A model can be too simple and consistently wrong, or too complex and unstable.
+Today we learn to recognize both problems, balance them, and follow a safe
+end-to-end workflow so that our results are honest and reproducible.
 
-- Bias, variance, and irreducible noise.
-- Model complexity and generalization.
-- Reproducibility and random seeds.
-- Introduction to data leakage.
-- The end-to-end ML workflow: problem definition, data, preprocessing, training, evaluation, and prediction.
+See the detailed content in:
 
-## Practical
+- [Theory](theory.md) — bias, variance, irreducible noise, the bias-variance
+  tradeoff, model complexity, regularization, random seeds, data leakage, the
+  full ML workflow, and real-world use cases.
+- [Practical](practical.md) — train simple and complex trees on
+  `house_prices.csv`, visualize underfitting and overfitting, compare training
+  and test RMSE, and build a preprocessing and training pipeline.
 
-- Compare a simple and complex model on the same dataset.
-- Visualize underfitting and overfitting.
-- Create a basic preprocessing and training pipeline.
-- Discuss a real-world use case, such as predicting employee attrition or house prices.
+## Files
+
+- `house_prices.csv` — a synthetic dataset of 140 houses with area, age,
+  location, and price. It includes a few missing ages so we can practice safe
+  imputation inside a pipeline.
 
 ## Outcome
 
-Learners can describe the complete ML lifecycle and explain the bias-variance tradeoff.
+Learners can explain the bias-variance tradeoff with a concrete example,
+recognize underfitting and overfitting, choose model complexity using unseen
+data, avoid data leakage, and describe the complete machine learning lifecycle.

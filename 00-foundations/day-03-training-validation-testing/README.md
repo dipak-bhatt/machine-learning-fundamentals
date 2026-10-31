@@ -2,22 +2,25 @@
 
 **Module:** Module 1: Foundations
 
-## Theory
+A model that scores 100% on the data it has already seen may still be useless on
+new data. Today we learn why we must test on unseen data, how to split a dataset
+into training and test sets, how to recognize overfitting and underfitting, and
+how to read a learning curve — all with simple examples.
 
-- Training, validation, and test datasets.
-- Training error vs. test error.
-- Overfitting and underfitting.
-- Generalization and the feasibility of learning.
-- Error, noise, approximation error, and generalization bounds at an introductory level.
-- Learning curves and the approximation-generalization tradeoff.
+See the detailed content in:
 
-## Practical
+- [Theory](theory.md) — training/validation/test sets, training vs test error,
+  overfitting, underfitting, generalization, sources of error, learning curves,
+  data leakage, and ML use cases for each concept.
+- [Practical](practical.md) — split `students_large.csv`, compare training and
+  test accuracy, make a model memorize student IDs, and plot learning curves.
 
-- Split a dataset using train_test_split.
-- Train a simple model and compare training versus test performance.
-- Show how a model can memorize training examples but fail on unseen data.
-- Plot a learning curve.
+## Files
+
+- `students_large.csv` — a synthetic dataset of 200 students with three useful
+  features and five irrelevant features, used in the practical.
 
 ## Outcome
 
-Learners understand why high training accuracy does not necessarily mean a good model.
+Learners understand why high training accuracy does not necessarily mean a good
+model, and can split data and read basic learning curves.
