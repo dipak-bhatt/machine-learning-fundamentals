@@ -2,6 +2,20 @@
 
 **Module:** Module 1: Foundations
 
+## In Plain English
+
+**Think of it like this:** machine learning is teaching a computer the way you
+teach a child to recognize dogs — show many examples, not a list of rules.
+
+- **AI** is the big umbrella; **ML** is learning patterns from data; **deep
+  learning** is ML with many layers of neurons.
+- The loop is simple: collect examples, find a pattern, predict, check the
+  error, improve.
+- Supervised learning uses labeled examples, unsupervised learning finds
+  groups, reinforcement learning learns from rewards.
+- Use ML when the rules are too complex to write by hand; it still needs good
+  data and human monitoring.
+
 ## 1. Big Picture: AI vs ML vs Deep Learning
 
 Think of **AI** as the whole umbrella: any machine that acts "smart".

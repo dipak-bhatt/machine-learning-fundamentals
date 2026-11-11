@@ -13,6 +13,20 @@ changing the inputs so that a linear model can fit more interesting patterns:
 **feature scaling**, **polynomial features**, and **regularization** (Ridge and
 Lasso). Each idea is built from small examples before we touch real data.
 
+## In Plain English
+
+**Think of it like this:** gradient descent is walking downhill on an error
+landscape, taking small steps in the steepest downward direction.
+
+- Start with a guess, measure the slope of the error, and step **opposite** the
+  slope.
+- The **learning rate** is the step size: too big overshoots, too small crawls.
+- **Scaling features** puts columns on comparable footing so training is
+  smoother.
+- **Polynomial features** let a line fit curves; **regularization** stops it
+  from overfitting.
+- **Ridge** shrinks weights; **Lasso** can shrink some weights to exactly zero.
+
 ## 1. What Day 05 Left Open
 
 In Day 05, the model's job was:

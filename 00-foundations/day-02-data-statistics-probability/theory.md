@@ -10,6 +10,20 @@ helps us reason about uncertainty.
 No advanced math is needed. Every idea below is explained with a small, everyday
 example.
 
+## In Plain English
+
+**Think of it like this:** a dataset is a table, statistics are the one-sentence
+summary of that table, and probability is how we talk about uncertainty.
+
+- **Rows** are examples; **columns** are features. The **target** is the answer
+  we want to predict.
+- **Mean, median, and mode** describe the center; **range and standard
+  deviation** describe the spread.
+- Use the **median** when there are outliers; use the **mean** when data is
+  balanced.
+- **Correlation is not causation** — a hidden third factor can drive both.
+- Real data is messy: check for missing values, outliers, and noise first.
+
 ## 1. The Building Blocks of a Dataset
 
 A **dataset** is simply a table of information. Imagine we collected data about

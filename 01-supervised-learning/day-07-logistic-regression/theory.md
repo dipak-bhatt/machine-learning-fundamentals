@@ -13,6 +13,20 @@ but then turns that score into a probability between 0 and 1. We will see how
 probabilities become class labels, why the loss function changes, how to read a
 confusion matrix, and how the same ideas extend to more than two classes.
 
+## In Plain English
+
+**Think of it like this:** logistic regression is a straight line whose output
+is bent into an S-shaped probability by the sigmoid.
+
+- It computes a linear score, then **squashes** it into a probability between
+  0 and 1.
+- Choose a **threshold** (usually 0.5) to turn that probability into a label.
+- **Log loss** punishes confident wrong answers; accuracy is for reporting, not
+  for training.
+- Coefficients act on **odds**: a positive weight raises the odds of the
+  positive class.
+- Move the threshold when false alarms and missed cases have different costs.
+
 ## 1. From Predicting Numbers to Predicting Choices
 
 A **classification** problem asks the model to assign one of a fixed set of labels.

@@ -1,22 +1,63 @@
-# Day 11 — Modern Ensemble Learning
+# Day 11 — Ensemble Learning
 
 **Module:** Module 2: Supervised Learning
 
-## Theory
+One tree is unstable; one line is rigid. An **ensemble** trains many models and
+combines their predictions, and the combination is often better than any member.
+The reason is statistical: if the members make *different* mistakes, averaging
+cancels some of them. Bagging fights variance, boosting fights bias, and the trick
+in both cases is diversity.
 
-- Why combining models can improve performance.
-- Bagging vs. boosting.
-- Random forests and feature importance.
-- Gradient boosting and an introduction to XGBoost or similar implementations.
-- Strengths, weaknesses, and interpretability of ensemble models.
+This day covers the two dominant families: **random forests**, which bag many
+decorrelated trees, and **gradient boosting**, which builds trees in sequence to
+correct the current ensemble's errors. These methods are the default choice for
+tabular data and the backbone of modern applied machine learning.
 
-## Practical
+## What You Will Learn
 
-- Compare a decision tree, random forest, and gradient boosting model.
-- Evaluate all three using the same training/test split.
-- Examine feature importance.
-- Discuss how ensembles are used in fraud detection, churn prediction, and business forecasting.
+- Why combining models can improve accuracy and stability.
+- How the bias-variance trade-off explains bagging and boosting.
+- How bagging uses bootstrap samples and why it reduces variance.
+- How random forests add feature randomness and why that matters.
+- How to read the out-of-bag score.
+- How gradient boosting fits successive trees to residuals.
+- How `n_estimators`, `learning_rate`, and tree depth interact.
+- What XGBoost, LightGBM, and CatBoost add to the core idea.
+- How voting and stacking combine different model families.
+- How to interpret ensembles with impurity and permutation importance.
+- When an ensemble is worth its cost, and when a simple baseline wins.
+
+## Detailed Content
+
+- [Theory](theory.md) — why ensembles work, bagging, random forests, OOB error,
+  boosting, gradient boosting in detail, modern boosting libraries, voting and
+  stacking, strengths and weaknesses, interpretability, use cases, and common
+  mistakes.
+- [Practical](practical.md) — compare a dummy baseline, logistic regression, and a
+  tree, train random forest and gradient boosting models, inspect OOB scores,
+  cross-validate, tune the main knobs, compare feature importance methods, and
+  combine models with voting and stacking.
+
+## Files
+
+No CSV is needed. The practical uses the Breast Cancer Wisconsin dataset bundled
+with scikit-learn:
+
+- **Breast Cancer Wisconsin** (`load_breast_cancer`) — 569 rows, 30 numeric
+  features, two classes. It is small enough to train many ensembles quickly and
+  clean enough to expose the difference between a single tree and a forest.
+
+The notebook should be created inside this Day 11 folder. Nothing is downloaded.
+
+## Before You Start
+
+- Day 09: decision trees, impurity, overfitting, and pruning.
+- Day 10: an alternative classifier and the value of honest comparison.
+- Day 04: train/test splits, cross-validation, bias, and variance.
 
 ## Outcome
 
-Learners can compare individual models with ensemble methods and choose a reasonable baseline.
+Learners can explain bagging and boosting, train and tune random forests and
+gradient boosting, interpret out-of-bag error and cross-validation spread, compare
+feature importance methods, combine models with voting and stacking, and justify
+when an ensemble is preferable to a simpler baseline.

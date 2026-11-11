@@ -12,6 +12,19 @@ learns a straight line that turns input values into a numerical prediction. In
 this lesson we build that idea from scratch, with small examples before touching
 a real dataset.
 
+## In Plain English
+
+**Think of it like this:** linear regression lays a ruler through the data and
+asks, "what straight trend summarizes these points best?"
+
+- **Regression** predicts a number; **classification** predicts a category.
+- A line is `y = b + w*x`: `w` is the slope, `b` is the intercept.
+- **Least squares** chooses the line whose squared errors are smallest.
+- **R²** says how much variation the line explains; **RMSE/MAE** say how big a
+  typical error is.
+- A line only captures straight-line patterns — plot the residuals to catch
+  curves.
+
 ## 1. Regression vs. Classification
 
 Both regression and classification are **supervised learning**: we show the model

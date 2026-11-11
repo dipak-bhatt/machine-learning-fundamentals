@@ -8,6 +8,18 @@ Yesterday we learned how to look at data. Today we ask a different question:
 This is one of the most important ideas in machine learning. A model that scores
 100% on the data it has already seen can still be useless on new data.
 
+## In Plain English
+
+**Think of it like this:** the training score is practicing on the exact exam
+questions; the test score is the real exam with new questions.
+
+- Split data into **train / validation / test**: learn, tune, then check once.
+- **Overfitting** is memorizing noise; **underfitting** is being too simple.
+- A big gap between training and validation scores means overfitting; both low
+  means underfitting.
+- Fit preprocessing on the **training set only** to avoid leaking answers.
+- Open the **test set once**, at the very end.
+
 ## 1. The Problem: A Model Can Memorize Instead of Learn
 
 Imagine two students preparing for a math exam.

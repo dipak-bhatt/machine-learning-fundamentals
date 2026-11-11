@@ -6,4 +6,7 @@ venv/
 .ipynb_checkpoints/
 data/raw/
 models/*.pkl
+projects/*/data/raw/
+projects/*/models/
+projects/*/outputs/
 .env

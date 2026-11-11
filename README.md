@@ -6,7 +6,7 @@ Hands-on Machine Learning course with 24 day-wise lessons, supporting documentat
 
 - `docs/setup/` - environment setup guides
 - `docs/datasets/` - dataset references
-- `docs/references/` - learning references
+- `docs/references/` - learning references and a [plain-English glossary](docs/references/glossary.md)
 - `00-foundations/` - Days 01-04
 - `01-supervised-learning/` - Days 05-11
 - `02-bayesian-instance-learning/` - Days 12-14
@@ -64,4 +64,6 @@ Hands-on Machine Learning course with 24 day-wise lessons, supporting documentat
 
 1. Create and activate a Python virtual environment.
 2. Install dependencies: `pip install -r requirements.txt`
-3. Follow the day folders in order.
+3. Keep the [plain-English glossary](docs/references/glossary.md) open while you
+   read; every lesson also starts with an "In Plain English" summary.
+4. Follow the day folders in order.

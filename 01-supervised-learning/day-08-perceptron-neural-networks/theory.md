@@ -17,6 +17,19 @@ neuron. It is elegant, it has a convergence proof, and it fails on a tiny proble
 called XOR. That failure, and the fix, is the bridge from classical ML to modern
 deep learning.
 
+## In Plain English
+
+**Think of it like this:** a neuron is one tiny decision-maker; a neural network
+is a team of them wired in layers, each layer passing useful signals upward.
+
+- A neuron does a **weighted sum + bias**, then applies an **activation**.
+- One perceptron can only draw a straight boundary; **XOR** shows its limit.
+- **Hidden layers** build new features and allow curved boundaries.
+- **Forward propagation** makes a prediction; **backpropagation** sends the
+  blame backward to adjust the weights.
+- Deep networks need more data and compute; on small tables, classical models
+  often match them.
+
 ## 1. From a Line to a Network
 
 A linear model computes one score:

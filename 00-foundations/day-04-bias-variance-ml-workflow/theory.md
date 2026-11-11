@@ -14,6 +14,20 @@ the **end-to-end machine learning workflow**.
 Our running example is simple: predict the selling price of a house from its
 area, age, and location.
 
+## In Plain English
+
+**Think of it like this:** bias is aiming at the wrong target, variance is
+scattering arrows around the target, and noise is the wind pushing every arrow.
+
+- **High bias** = too simple (underfitting); **high variance** = too sensitive
+  to the particular training rows (overfitting).
+- Total error = **bias² + variance + noise**; reducing one often increases the
+  other.
+- More data and regularization reduce variance; richer models reduce bias.
+- A good workflow: understand → clean → split → baseline → train → evaluate →
+  tune → report.
+- Prefer the **simplest model that performs well**.
+
 ## 1. Two Ways to Be Wrong
 
 Imagine three people throwing darts at a target.

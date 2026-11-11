@@ -57,3 +57,8 @@
 - Customer Churn Prediction
 - Customer Segmentation
 - Spam Classification
+
+### Study Aid
+
+- [Plain-English glossary](docs/references/glossary.md) — one-line definitions
+  of every important term.
