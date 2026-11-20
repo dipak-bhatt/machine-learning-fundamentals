@@ -207,121 +207,70 @@ variance.
 
 ## 7. Why Can a Model Generalize? (Feasibility of Learning)
 
-We cannot test every future case. So why should a model work at all? We rely on
-three assumptions:
+We cannot test every future case, so generalization rests on three assumptions:
+future data is **similar** to training data, the sample is **representative**,
+and the pattern is **learnable**. When they break, the model fails.
 
-1. **Future data is similar to training data.** The new examples come from the
-   same kind of situation, not a completely different world.
-2. **The training sample is representative.** It is not biased toward one group,
-   one time, or one place.
-3. **The pattern is learnable.** The target is not pure randomness.
+- **Distribution shift:** customer habits change after a pandemic.
+- **Sampling bias:** training only on morning customers.
+- **Concept drift:** spam emails change over time.
 
-In plain words: if the world stays similar and the sample is fair, patterns
-learned on the sample tend to work on new data.
-
-These assumptions can break:
-
-- **Distribution shift:** shopping habits change after a pandemic, so a model
-  trained on old data may fail.
-- **Sampling bias:** training only on morning customers may not represent
-  evening customers.
-- **Concept drift:** spam emails change over time, so an old spam filter becomes
-  outdated.
-
-There is no guarantee that a model will always generalize. We monitor models and
-retrain them when the world changes.
+> **Best use case:** a demand-forecasting model trained on pre-pandemic sales
+> collapses when shopping moves online. The fix is monitoring and retraining,
+> not a better algorithm.
 
 ## 8. Where Does the Error Come From?
-
-A useful way to think about error is:
 
 ```
 Total error = approximation error + estimation error + irreducible noise
 ```
 
-| Part | Plain meaning | Example | What helps |
-|------|---------------|---------|------------|
-| **Irreducible noise** | Randomness that no model can remove | Two patients with the same symptoms have different outcomes | Better measurements; accept a limit |
-| **Approximation error** | The model family is too simple | Using a straight line for a curved pattern | A more flexible model or better features |
-| **Estimation error** | The model fits quirks of this particular sample | A deep tree memorizing 20 students | More data, a simpler model, regularization |
+- **Approximation error:** the model family is too simple (a straight line for a
+  curved pattern).
+- **Estimation error:** the model fits quirks of this sample (a deep tree).
+- **Irreducible noise:** randomness no model can remove.
 
-Think of an archer:
+Like an archer: aiming at the wrong target (approximation), arrows scattered
+around the target (estimation), and wind (noise).
 
-- **Approximation error (bias):** aiming at the wrong target.
-- **Estimation error (variance):** arrows scattered around the target.
-- **Noise:** wind pushing every arrow a little.
-
-A **generalization bound** is a mathematical promise of the form: "with enough
-data and a model that is not too flexible, the test error will be close to the
-training error with high probability." We do not need the formula today. The
-intuition is enough: **more representative data and a suitably simple model make
-the gap smaller.**
+> **Best use case:** predicting delivery time. A linear model ignores rush hour
+> (approximation), a deep tree memorizes a few unusual days (estimation), and
+> traffic accidents are unpredictable (noise). More representative data and a
+> suitably simple model shrink the gap.
 
 ## 9. Learning Curves
 
 A **learning curve** plots training and validation performance against the number
-of training examples.
+of training examples. As the set grows, the training score falls slightly while
+the validation score rises and levels off.
 
-```
-Score
-  |
-  |  training score \________
-  |                          \____
-  |  validation score   _____/
-  |                   __/
-  |
-  +--------------------------------→ Training set size
-```
+- **Both low and close** → underfitting; improve the model or features.
+- **High training, much lower validation** → overfitting; more data often helps.
+- **Both high and close** → good fit.
 
-With a small training set, the model can fit the data almost perfectly, so the
-training score starts high. As the training set grows, the training score usually
-falls a little, while the validation score rises and then levels off.
+> **Best use case:** a spam filter's validation score plateaus as emails are
+> added, which signals that more data will not help and better features are
+> needed.
 
-How to read one:
+## 10. A Safe Splitting Workflow and Data Leakage
 
-- **Both scores low and close together** → underfitting. More data alone will
-  not help much; the model or features need to improve.
-- **Training score high, validation score much lower, big gap** → overfitting.
-  More data often helps close the gap.
-- **Both scores high and close together** → good fit.
-
-Learning curves help us decide between two actions:
-
-1. Collect more data.
-2. Improve the model or the features.
-
-## 10. A Safe Splitting Workflow
-
-Here is a simple, safe order of steps:
+Safe order of steps:
 
 1. Clean obvious data errors.
 2. Set aside the **test set** first.
 3. Split the rest into **training** and **validation** sets.
 4. Fit preprocessing (mean, median, scaler, encoder) on the **training set only**.
-5. Train on the training set.
-6. Compare and tune using the validation set.
-7. When you are happy, evaluate **once** on the test set.
-8. Report that test result. Do not keep tuning on it.
+5. Train, then tune using the validation set.
+6. Evaluate **once** on the test set and report it. Do not keep tuning on it.
 
-### Data leakage
+**Data leakage** is when test-set or future information sneaks into training, so
+the model looks better than it really is. Fill missing values with the training
+median, fix scaling **after** splitting, and keep the same entity out of both
+sets.
 
-**Data leakage** happens when information from the test set (or from the future)
-sneaks into training. The model then looks better than it really is.
-
-Example:
-
-- **Wrong:** fill missing values using the median of the whole dataset, then
-  split into train and test.
-- **Right:** compute the median on the training set, then use that same median
-  for the validation and test sets.
-
-Other common leaks:
-
-- The same patient appears in both training and test sets.
-- Duplicate rows are split across sets.
-- A feature contains the answer (for example, "was refunded" when predicting
-  "will churn").
-- Future information is used to predict the past.
+> **Best use case:** a hospital puts images from the same patient in both training
+> and test sets, so the model memorizes the patient instead of the disease and its
+> reported accuracy is far too optimistic. Splitting **by patient** fixes it.
 
 ## 11. ML Use Cases for Today's Concepts
 
